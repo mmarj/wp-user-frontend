@@ -770,7 +770,7 @@ class WPUF_Simple_Login {
                 $wpuf_user   = new WPUF_User( $user->ID );
 
                 if ( !$wpuf_user->is_verified() ) {
-                    $error->add( 'acitve_user', sprintf( __( '<strong>Your account is not active.</strong><br>Please check your email for activation link. <br><a href="%s">Click here</a> to resend the activation link', 'wp-user-frontend' ), $resend_link ) );
+                    $error->add( 'active_user', sprintf( __( '<strong>Your account is not active.</strong><br>Please check your email for activation link. <br><a href="%s">Click here</a> to resend the activation link', 'wp-user-frontend' ), $resend_link ) );
 
                     return $error;
                 }
